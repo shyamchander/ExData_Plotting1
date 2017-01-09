@@ -25,7 +25,7 @@ constructPlot4<-function(){
         plot(DT$Sub_metering_1~DT$RTime,type="l",ylab="Energy sub metering",col="black",xlab = "")
         points(DT$Sub_metering_2~DT$RTime,type = "l",col="red")
         points(DT$Sub_metering_3~DT$RTime,type = "l",col="blue")
-        legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=c(1,1,1))
+        legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=c(1,1,1),bty="n")
         
         #Generating top right plot: Voltage against time
         with(DT,plot(Voltage~RTime,type="l",ylab = "Voltage",xlab = "datetime",col="black"))
