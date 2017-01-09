@@ -1,3 +1,4 @@
+##Function to plot a histrogram for the Global_active_power column 
 constructPlot1<-function(){
         #Load Data for the 2 days in Feb
         DT<-fread('../household_power_consumption.txt',skip="1/2/2007",
